@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/img/fonts/AmaticSC-Regular.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/img/fonts/AmaticSC-Bold.woff) format('woff');
+  }
+html {
+    box-sizing: border-box;
+    background: #ffc600;
+    font-family: 'Amatic SC';
+    font-size: 20px;
+    font-weight: regular;
+}
