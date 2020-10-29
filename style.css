@@ -15,5 +15,105 @@ html {
     background: #ffc600;
     font-family: 'Amatic SC';
     font-size: 20px;
-    font-weight: regular;
+    font-weight: 400;
 }
+
+body {
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .slides {
+      min-height: 100vh;
+      overflow: hidden;
+      display: flex;
+  }
+
+.slide_1 {
+background-image: url(/img/cat.jpg);
+} 
+
+.slide_2 {
+    background-image: url(/img/fallLake.jpg);
+}
+
+.slide_3 {
+    background-image: url(/img/riverSnow.jpg);
+}
+
+.slide_4 {
+    background-image: url(/img/sunrise.jpg);
+}
+.slide_5 {
+    background-image: url(/img/sunset.jpg);
+}
+
+.slide {
+    background-color: #6B0F9C;
+    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: center;
+    align-items: center;
+    transition: 
+    font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+    background 0.2s;
+    font-size: 20px;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide > * {
+    margin: 0;
+    width: 100%;
+    transition: transform 0.5s;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide > *:first-child {
+    transform: translateY(-100%);
+}
+
+.slide.open-active > *:first-child {
+    transform: translateY(0);
+}
+
+.slide > *:last-child {
+    transform: translateY(100%);
+}
+
+.slide.slide.open-active > *:last-child {
+    transform: translateY(0);
+}
+
+.slide p {
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), o o 14px rgba(0, 0, 0, 0.45);
+    font-size: 2em;
+}
+
+.slide p:nth-child(2){
+    font-size: 4em;
+}
+
+.slide.open {
+    flex: 5;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .slide p {
+      font-size: 1em;
+    }
+  }
