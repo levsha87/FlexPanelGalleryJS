@@ -3,13 +3,15 @@
     font-style: normal;
     font-weight: 400;
     src: url(/img/fonts/AmaticSC-Regular.woff) format('woff');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: 'Amatic SC';
     font-style: normal;
     font-weight: 700;
     src: url(/img/fonts/AmaticSC-Bold.woff) format('woff');
-  }
+}
+
 html {
     box-sizing: border-box;
     background: #ffc600;
@@ -24,16 +26,16 @@ body {
 
 *, *:before, *:after {
     box-sizing: inherit;
-  }
+}
 
-  .slides {
-      min-height: 100vh;
-      overflow: hidden;
-      display: flex;
-  }
+.slides {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
 
 .slide_1 {
-background-image: url(/img/cat.jpg);
+    background-image: url(/img/cat.jpg);
 } 
 
 .slide_2 {

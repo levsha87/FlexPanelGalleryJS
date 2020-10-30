@@ -1,14 +1,14 @@
 const slides = document.querySelectorAll('.slide');
-const FullSize = 'open';
-const ReplaceText = 'open-active';
+const FULL_SIZE = 'open';
+const REPLACE_TEXT = 'open-active';
 
 function toggleOpen() {
-  this.classList.toggle(FullSize);
+  this.classList.toggle(FULL_SIZE);
 }
 
 function toggleActive(e) {
   if (e.propertyName.includes('flex')) {
-    this.classList.toggle(ReplaceText);
+    this.classList.toggle(REPLACE_TEXT);
   }
 }
 //function run work onclick, not transitioned
